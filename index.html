@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stratum — Strategic Ground Truth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 18 L12 4 L20 18" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M7 14 L17 14" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name">Stratum</div>
+          <div class="brand-tag">Strategic Ground Truth</div>
+        </div>
+      </div>
+      <p class="brand-why">The layer corporations never built: a living system of record for <em>assumptions, dependencies, and decision-ground-truth</em> — the beliefs strategy actually runs on.</p>
+      <nav class="nav">
+        <button class="nav-btn active" data-view="setup">Setup</button>
+        <button class="nav-btn" data-view="command">Command Center</button>
+        <button class="nav-btn" data-view="research">Research Thesis</button>
+        <button class="nav-btn" data-view="pillars">Strategy Pillars</button>
+        <button class="nav-btn" data-view="assumptions">Assumptions</button>
+        <button class="nav-btn" data-view="graph">Dependency Graph</button>
+        <button class="nav-btn" data-view="signals">Signal Feed</button>
+        <button class="nav-btn" data-view="decisions">Decision Trace</button>
+        <button class="nav-btn" data-view="premortem">Premortem Lab</button>
+        <button class="nav-btn" data-view="alignment">Alignment Matrix</button>
+        <button class="nav-btn" data-view="export">Board Brief</button>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="health-pill" id="org-health-pill">—</div>
+        <span class="mono">local-first · research-backed</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 id="view-title">Setup</h1>
+          <p id="view-subtitle">Plug in 3 APIs — clone, configure, go</p>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn btn-ghost" id="btn-import">Import JSON</button>
+          <button class="btn btn-primary" id="btn-quick-add">+ Log assumption</button>
+        </div>
+      </header>
+
+      <section id="view-setup" class="view active"></section>
+      <section id="view-command" class="view"></section>
+      <section id="view-research" class="view"></section>
+      <section id="view-pillars" class="view"></section>
+      <section id="view-assumptions" class="view"></section>
+      <section id="view-graph" class="view"></section>
+      <section id="view-signals" class="view"></section>
+      <section id="view-decisions" class="view"></section>
+      <section id="view-premortem" class="view"></section>
+      <section id="view-alignment" class="view"></section>
+      <section id="view-export" class="view"></section>
+    </main>
+  </div>
+
+  <input type="file" id="import-file" accept=".json" hidden />
+
+  <dialog id="modal" class="modal">
+    <form id="modal-form" method="dialog">
+      <header class="modal-head">
+        <h2 id="modal-title">New assumption</h2>
+        <button type="button" class="icon-btn" id="modal-close" aria-label="Close">×</button>
+      </header>
+      <div id="modal-body" class="modal-body"></div>
+      <footer class="modal-foot">
+        <button type="button" class="btn btn-ghost" id="modal-cancel">Cancel</button>
+        <button type="submit" class="btn btn-primary" id="modal-save">Save</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
