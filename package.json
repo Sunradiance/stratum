@@ -1,7 +1,7 @@
 {
   "name": "stratum",
   "version": "0.1.0",
-  "description": "Stratum — Strategic Ground Truth. Clone, plug in 3 APIs, track what must be true to win.",
+  "description": "Your strategy runs on beliefs nobody tracks. Stratum is strategic ground truth — assumptions, drift, signals. Free. Local. Stop flying blind.",
   "scripts": {
     "setup": "cd backend && pip install -r requirements.txt",
     "dev": "cd backend && python run.py",

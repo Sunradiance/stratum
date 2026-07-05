@@ -1,10 +1,52 @@
 # Stratum — Strategic Ground Truth
 
-**The layer corporations never built:** a living system of record for strategic assumptions, dependencies, and decision-ground-truth.
+<div align="center">
 
-Corporations track KPIs, OKRs, risks, and compliance. They rarely track the *beliefs* those systems depend on — until one breaks. Stratum fixes that.
+### Your strategy is a hypothesis. Your assumptions are invisible.
 
-Clone it, plug in 3 API keys, and go. Works offline without keys; AI + web scanning unlock with `.env`.
+You have OKRs. Dashboards. Risk registers. Compliance checklists.  
+A beautiful deck from Q1 that everyone already forgot.
+
+**But nobody tracks what must be TRUE for any of it to work.**
+
+"We'll win mid-market on simplicity."  
+*Based on what belief?*  
+"EU customers will pay a sovereignty premium."  
+*When did we last validate that? Who owns it?*
+
+**Six months later the bet fails — and nobody can name the assumption that broke.**
+
+That's not bad execution. That's flying blind on beliefs you never wrote down.
+
+---
+
+**Stratum is the layer corporations never built.**
+
+A living system of record for **strategic assumptions**, **dependencies**, and **decision-ground-truth** — the connective tissue between quarterly planning and what your team actually does on Tuesday.
+
+- Assumption graph — what depends on what  
+- Drift radar — beliefs going stale before they break you  
+- Signal feed — evidence that contradicts what you still "know"  
+- Alignment matrix — where teams secretly disagree  
+- Board brief — assumption health, not vanity metrics  
+
+Clone it. Plug your API key. **60 seconds. Free. Local.**
+
+[Quick start](#quick-start) · [The 3 APIs](#the-3-apis) · [Features](#features)
+
+</div>
+
+---
+
+## Sound familiar?
+
+- ✅ Strategy deck from January → **nobody can list the 5 beliefs it depends on**
+- ✅ Product ships X, Sales promises Y → **same company, different reality**
+- ✅ Post-mortem: *"we assumed churn was about price"* → **never validated, never logged**
+- ✅ Board asks "what's our biggest strategic risk?" → **you list KPIs, not assumptions**
+- ✅ You have GRC, OKRs, ERP → **no system of record for what must be true to win**
+
+Nodded twice? **Your house has mess. Stratum is the flashlight.**
 
 ---
 
@@ -111,22 +153,24 @@ stratum/
 
 ---
 
-## Push to GitHub (public, free)
+## The stack
 
-```bash
-cd stratum
-git init
-git add .
-git commit -m "Initial commit: Stratum strategic ground truth"
-git branch -M main
-git remote add origin https://github.com/Sunradiance/stratum.git
-git push -u origin main
-```
-
-Never commit `.env` — it's in `.gitignore`.
+| App | Port | Layer |
+|-----|------|-------|
+| **Stratum** | 8791 | What must be **true** to win |
+| [Keepline](https://github.com/Sunradiance/keepline) | 8792 | What you're **committed to pay** |
+| [Whyline](https://github.com/Sunradiance/whyline) | 8793 | What was **decided and why** |
 
 ---
 
 ## License
 
-MIT — use it, fork it, ship it.
+MIT — use it, fork it, stop flying blind on beliefs.
+
+---
+
+<div align="center">
+
+**Stratum** — illuminate what you depend on but never tracked.
+
+</div>
