@@ -199,7 +199,7 @@ function renderSetup() {
 
     <div class="card">
       <div class="card-title" style="margin-bottom:0.75rem">Quick start</div>
-      <pre class="export-preview" style="max-height:none;font-size:0.75rem">git clone https://github.com/YOUR_USERNAME/stratum.git
+      <pre class="export-preview" style="max-height:none;font-size:0.75rem">git clone https://github.com/Sunradiance/stratum.git
 cd stratum
 cp .env.example .env
 # edit .env — add LLM_API_KEY, TAVILY_API_KEY, SERPER_API_KEY

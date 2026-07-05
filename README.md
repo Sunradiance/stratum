@@ -20,7 +20,7 @@ Clone it, plug in 3 API keys, and go. Works offline without keys; AI + web scann
 ### 1. Clone & configure
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/stratum.git
+git clone https://github.com/Sunradiance/stratum.git
 cd stratum
 
 cp .env.example .env
@@ -119,7 +119,7 @@ git init
 git add .
 git commit -m "Initial commit: Stratum strategic ground truth"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/stratum.git
+git remote add origin https://github.com/Sunradiance/stratum.git
 git push -u origin main
 ```
 
